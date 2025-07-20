@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Web Technology</title>
+</head>
+
+<body>
+    <h1 align="center"><u>Tables in HTML</u></h1>
+
+    <ul>
+        <li>Table is a representation of data in the form of rows and columns.</li>
+        <li>In HTML to create table layout we use <b>&lt;table&gt;&lt;/table&gt;</b>.</li>
+        <li><b>Table Row - </b>To create a single row of cells inside the table we use <b>&lt;tr&gt;&lt;/tr&gt;</b> tag,
+            <b>tr</b> stands for table row.</li>
+        <li><b>Table Heading - </b>To create a cell that prints the column name of a table in bold letters
+            <b>&lt;th&gt;&lt;/th&gt;</b> tag, <b>th</b> stands for table heading.</li>
+        <li><b>Table Data - </b>It is used to print information inside the cell using <b>&lt;td&gt;&lt;/td&gt;</b> tag,
+            <b>td</b> stands for table data.</li>
+        <li><b>Caption - </b>It is used to give a name to the table at the top or bottom using
+            <b>&lt;caption&gt;&lt;/caption&gt;</b>.</li>
+            <br>
+            <br>
+        <ul>
+            <li><b>Table Tag:</b> It is used to create a table and incorporates <b>tr, th, td, caption</b>.
+                <br>Attributes:
+                <ul>
+                    <li><b>border</b>: Sets the border thickness.</li>
+                    <li><b>bgcolor</b>: Sets background color.</li>
+                    <li><b>align</b>: Aligns the table (left, center, right).</li>
+                    <li><b>cellspacing</b>: Space between cells.</li>
+                    <li><b>cellpadding</b>: Space between content and border.</li>
+                </ul>
+            </li>
+            <br>
+
+            <li><b>Caption Tag:</b>
+                <ul>
+                    <li>Used to provide title for the table.</li>
+                    <li><b>align</b>: Sets caption position (top/bottom).</li>
+                </ul>
+            </li>
+            <br>
+
+            <li><b>Table Row Tag:</b> <b>&lt;tr&gt;</b>
+                <ul>
+                    <li><b>align</b>: Horizontal alignment.</li>
+                    <li><b>valign</b>: Vertical alignment.</li>
+                    <li><b>bgcolor</b>: Row background color.</li>
+                </ul>
+            </li>
+            <br>
+
+            <li><b>Table Heading and Data Tags:</b> <b>&lt;th&gt;</b> and <b>&lt;td&gt;</b>
+                <ul>
+                    <li><b>colspan</b>: Merge multiple columns.</li>
+                    <li><b>rowspan</b>: Merge multiple rows.</li>
+                    <li><b>align</b>: Align content inside cell.</li>
+                    <li><b>valign</b>: Vertical content alignment.</li>
+                    <li><b>bgcolor</b>: Cell background color.</li>
+                    <li><b>nowrap</b>: Prevents content wrap.</li>
+                    <li><b>width</b>: Cell width.</li>
+                    <li><b>height</b>: Cell height.</li>
+                </ul>
+            </li>
+        </ul>
+    </ul>
+
+    <hr>
+
+    <h2 align="center">Table Example</h2>
+    <pre>
+&lt;table border="2" bgcolor="lightyellow" align="center" cellpadding="10" cellspacing="5"&gt;
+    &lt;caption align="top"&gt;&lt;b&gt;Student Marks Table&lt;/b&gt;&lt;/caption&gt;
+    
+    &lt;tr bgcolor="lightblue" align="center" valign="middle"&gt;
+        &lt;th colspan="2"&gt;Student Info&lt;/th&gt;
+        &lt;th colspan="2"&gt;Marks&lt;/th&gt;
+    &lt;/tr&gt;
+
+    &lt;tr align="center" bgcolor="lightgrey"&gt;
+        &lt;th&gt;Name&lt;/th&gt;
+        &lt;th&gt;Roll No&lt;/th&gt;
+        &lt;th&gt;Math&lt;/th&gt;
+        &lt;th&gt;Science&lt;/th&gt;
+    &lt;/tr&gt;
+
+    &lt;tr align="center" valign="middle"&gt;
+        &lt;td rowspan="2" bgcolor="lightgreen" width="100" height="50"&gt;Alice&lt;/td&gt;
+        &lt;td&gt;101&lt;/td&gt;
+        &lt;td&gt;85&lt;/td&gt;
+        &lt;td&gt;90&lt;/td&gt;
+    &lt;/tr&gt;
+
+    &lt;tr align="center" valign="top"&gt;
+        &lt;td&gt;102&lt;/td&gt;
+        &lt;td&gt;78&lt;/td&gt;
+        &lt;td&gt;88&lt;/td&gt;
+    &lt;/tr&gt;
+
+    &lt;tr align="center" valign="bottom"&gt;
+        &lt;td nowrap&gt;Bob&lt;/td&gt;
+        &lt;td&gt;103&lt;/td&gt;
+        &lt;td&gt;92&lt;/td&gt;
+        &lt;td&gt;81&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+    </pre>
+
+    <h3 align="center">Output:</h3>
+
+    <table border="2" bgcolor="lightyellow" align="center" cellpadding="10" cellspacing="5">
+        <caption align="top"><b>Student Marks Table</b></caption>
+
+        <tr bgcolor="lightblue" align="center" valign="middle">
+            <th colspan="2">Student Info</th>
+            <th colspan="2">Marks</th>
+        </tr>
+
+        <tr align="center" bgcolor="lightgrey">
+            <th>Name</th>
+            <th>Roll No</th>
+            <th>Math</th>
+            <th>Science</th>
+        </tr>
+
+        <tr align="center" valign="middle">
+            <td rowspan="2" bgcolor="lightgreen" width="100" height="50">Alice</td>
+            <td>101</td>
+            <td>85</td>
+            <td>90</td>
+        </tr>
+
+        <tr align="center" valign="top">
+            <td>102</td>
+            <td>78</td>
+            <td>88</td>
+        </tr>
+
+        <tr align="center" valign="bottom">
+            <td nowrap>Bob</td>
+            <td>103</td>
+            <td>92</td>
+            <td>81</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>

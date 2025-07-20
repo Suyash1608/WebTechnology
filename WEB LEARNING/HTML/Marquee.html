@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Web Technology</title>
+</head>
+
+<body>
+
+    <h1 align="center"><u>Marquee Tag in HTML</u></h1>
+
+    <ul>
+        <li>&lt;marquee&gt;&lt;/marquee&gt; is an obsolete HTML tag used to create scrolling text or images on a web
+            page. <br>
+
+            Marquee tag has 7 properties:</li>
+        <ol>
+            <li><b>Direction : </b> It is used to specify the scrolling direction.</li>
+            <ul type="disc">
+                <li><b>Left : </b>content starts on the right and moves to the left</li>
+                <pre>
+                &lt;marquee direction="left"&gt;Scrolling Left&lt;/marquee&gt;
+                <strong>Output:</strong><br>
+                <marquee direction="left">Scrolling Left</marquee>
+            </pre>
+                <li><b>Up : </b>content scrolls upward</li>
+                <pre>
+                &lt;marquee direction="up" height="50"&gt;Scrolling Up&lt;/marquee&gt;
+                <strong>Output:</strong><br>
+                <marquee direction="up" height="50">Scrolling Up</marquee>
+            </pre>
+                <li><b>Down : </b> content scrolls downward.</li>
+                <pre>
+                &lt;marquee direction="down" height="50"&gt;Scrolling Down&lt;/marquee&gt;
+                <strong>Output:</strong><br>
+                <marquee direction="down" height="50">Scrolling Up</marquee>
+            </pre>
+                <li><b>Right : </b> content starts on the left and moves to the right</li>
+                <pre>
+                &lt;marquee direction="right" height="50"&gt;Scrolling Right&lt;/marquee&gt;
+                <strong>Output:</strong><br>
+                <marquee direction="right" height="50">Scrolling Up</marquee>
+            </pre>
+            </ul>
+
+            <li><b>Behavior :</b> It is a marquee property that is used to change the movement of scrolling content</li>
+
+            <ul type="disc">
+                <li><b>scroll : </b>It is the default behavior that scrolls the content in only one direction.</li>
+                <pre>
+                &lt;marquee behavior="scroll"&gt;Continuous Scroll&lt;/marquee&gt;
+                <strong>Output:</strong><br>
+                <marquee behavior="scroll">Continuous Scroll</marquee><br>
+            </pre>
+                <li><b>slide: </b>It is used to scroll the content only once.</li>
+                <pre>
+                &lt;marquee behavior="slide"&gt;Scroll Once&lt;/marquee&gt;
+                <strong>Output:</strong><br>
+                <marquee behavior="slide">Scroll Once</marquee><br>
+            </pre>
+                <li><b>alternate : </b>It is used to start the scroll inside the screen and bounce back in the opposite
+                    direction.</li>
+                <pre>
+                &lt;marquee behavior="alternate"&gt;Alternate(Bounce Back and Forth)&lt;/marquee&gt;
+                <strong>Output:</strong><br>
+                <marquee behavior="alternate">Alternate(Bounce Back and Forth)</marquee><br>
+            </pre>
+            </ul>
+
+            <li><b>height</b> and <b>width</b> : These are used to change the size of marquee tag.</li>
+
+            <pre>
+                    &lt;marquee height="50" width="300"&gt;Marquee 300x50&lt;/marquee&gt;
+                    <strong>Output:</strong><br>
+                    <marquee height="50" width="300">Marquee 300x50</marquee>
+                </pre>
+
+            <li><b>scrollamount</b> is used to increase the speed of content.</li>
+
+            <pre>
+                    &lt;marquee scrollamount="10"&gt;Fast Scroll&lt;/marquee&gt;
+                    <strong>Output:</strong><br>
+                    <marquee scrollamount="10">Fast Scroll</marquee>
+                </pre>
+
+            <li><b>scrolldelay</b> is used to decrease the speed of content.</li>
+
+            <pre>
+                    &lt;marquee scrollamount="10" scrolldelay="200"&gt;Slow Scroll&lt;/marquee&gt;
+                    <strong>Output:</strong><br>
+                    <marquee scrollamount="10" scrolldelay="200">Slow Scroll</marquee>
+                </pre>
+
+            <li><b>loop</b> is used to specify the iteration count of scroll.</li>
+
+            <pre>
+                    &lt;marquee loop="3" scrollamount="10"&gt;Scrolls 3 times&lt;/marquee&gt;
+                    <strong>Output:</strong><br>
+                    <marquee loop="3" scrollamount="10">Scrolls 3 times</marquee>
+                </pre>
+        </ol>
+    </ul>
+
+</body>
+
+</html>

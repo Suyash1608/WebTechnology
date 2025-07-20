@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Web Technology</title>
+</head>
+
+<body>
+
+    <h1 align="center"><u>Lists in HTML</u></h1>
+    <ul>
+        <li>
+            A list in HTML is a collection of items. <br>
+            There are three main types of lists:
+            <ul>
+                <li>Unordered List (<code>&lt;ul&gt;</code>)</li>
+                <li>Ordered List (<code>&lt;ol&gt;</code>)</li>
+                <li>Definition List (<code>&lt;dl&gt;</code>)</li>
+            </ul>
+        </li>
+        <ol>
+            <h3>
+                <li>Unordered List (<code>&lt;ul&gt;</code>)
+            </h3>
+            Defines a list with no specific order.<br>
+            It uses bullet points.
+            <ul>
+                <li>
+                    <b>Attribute:</b>
+                    <ul>
+                        <li><code>type</code>: Defines bullet style. Possible values:
+                            <ul>
+                                <li><code>disc</code> (default)</li>
+                                <li><code>circle</code></li>
+                                <li><code>square</code></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    Example with <code>type="circle"</code>:
+                    <ul>
+                        <li><b>Code:</b>
+                            <pre>
+&lt;ul type="circle"&gt;
+  &lt;li&gt;Apple&lt;/li&gt;
+  &lt;li&gt;Banana&lt;/li&gt;
+  &lt;li&gt;Cherry&lt;/li&gt;
+&lt;/ul&gt;
+                            </pre>
+                        </li>
+                        <li><b>Output:</b>
+                            <ul type="circle">
+                                <li>Apple</li>
+                                <li>Banana</li>
+                                <li>Cherry</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            </li>
+
+            <h3>
+                <li>
+                    Ordered List (<code>&lt;ol&gt;</code>)
+            </h3>
+            Defines a list with items in ascending order.
+            <ul>
+                <li>
+                    Attributes:
+                    <ul>
+                        <li><code>type</code>: Numbering style. Values: <code>1</code> (default), <code>a</code>,
+                            <code>A</code>, <code>i</code>, <code>I</code>.
+                        </li>
+                        <li><code>start</code>: Starting number or letter.</li>
+                    </ul>
+                </li>
+                <li>
+                    Example with <code>type="A"</code> and <code>start="3"</code>:
+                    <ul>
+                        <li><b>Code:</b>
+                            <pre>
+&lt;ol type="A" start="3"&gt;
+  &lt;li&gt;HTML&lt;/li&gt;
+  &lt;li&gt;CSS&lt;/li&gt;
+  &lt;li&gt;JavaScript&lt;/li&gt;
+&lt;/ol&gt;
+                            </pre>
+                        </li>
+                        <li><b>Output:</b>
+                            <ol type="A" start="3">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                            </ol>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            </li>
+
+            <h3>
+                <li>
+                    Definition List (<code>&lt;dl&gt;</code>)
+            </h3>
+            Used to display terms and their definitions/descriptions.
+            <ul>
+                <li>
+                    Tags:
+                    <ul>
+                        <li><code>&lt;dl&gt;</code>: Defines the definition list.</li>
+                        <li><code>&lt;dt&gt;</code>: Defines a term.</li>
+                        <li><code>&lt;dd&gt;</code>: Defines the description of the term.</li>
+                    </ul>
+                </li>
+                <li>
+                    Example:
+                    <ul>
+                        <li><b>Code:</b>
+                            <pre>
+&lt;dl&gt;
+  &lt;dt&gt;HTML:&lt;/dt&gt;
+  &lt;dd&gt;HyperText Markup Language&lt;/dd&gt;
+  &lt;dt&gt;CSS:&lt;/dt&gt;
+  &lt;dd&gt;Cascading Style Sheets&lt;/dd&gt;
+  &lt;dt&gt;JS:&lt;/dt&gt;
+  &lt;dd&gt;JavaScript programming language&lt;/dd&gt;
+&lt;/dl&gt;
+                            </pre>
+                        </li>
+                        <li><b>Output:</b>
+                            <dl>
+                                <dt>HTML:</dt>
+                                <dd>HyperText Markup Language</dd>
+                                <dt>CSS:</dt>
+                                <dd>Cascading Style Sheets</dd>
+                                <dt>JS:</dt>
+                                <dd>JavaScript programming language</dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            </li>
+        </ol>
+        <li>
+            <hr>
+            <h3>Other Tags</h3>
+            <ul>
+                <li>
+                    Font Tag (<code>&lt;font&gt;</code>): Used to change text color.
+                    <ul>
+                        <li><b>Example:</b>
+                            <pre>&lt;font color="blue"&gt;This text is blue.&lt;/font&gt;</pre>
+                            <font color="blue">This text is blue.</font>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    Non-Breaking Space (<code>&amp;nbsp;</code>): Inserts space that does not break the line.
+                    <ul>
+                        <li><b>Example:</b>
+                            <pre>Hello&nbsp;&nbsp;&nbsp;&nbsp;World!</pre>
+                            Hello&nbsp;&nbsp;&nbsp;&nbsp;World!
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+</body>
+
+</html>

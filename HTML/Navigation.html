@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Navigation in HTML</title>
+</head>
+<body>
+  <h1 align="center"><u>Navigation in HTML</u></h1>
+
+  <!-- Anchor Tag -->
+  <ul>
+    <li><b>Anchor Tag ( &lt;a&gt; )</b></li>
+    <ul>
+      <li>The anchor tag is used to create a hyperlink, allowing users to navigate from one webpage to another.</li>
+      <li><b>Attributes:</b>
+        <ul>
+          <li><b>href:</b> Specifies the destination URL.</li>
+          <li><b>target:</b> Defines where the link will open.
+            <ol>
+              <li><b>_self:</b> Opens the link in the same tab (default).</li>
+              <li><b>_blank:</b> Opens the link in a new tab.</li>
+            </ol>
+          </li>
+        </ul>
+      </li>
+      <li><b>Examples:</b><br><br>
+
+        ➤ Open in same tab:<br>
+        <code>&lt;a href="https://www.google.com"&gt;Visit Google&lt;/a&gt;</code><br>
+        Result: <a href="https://www.google.com">Visit Google</a><br><br>
+
+        ➤ Open in new tab:<br>
+        <code>&lt;a href="https://www.google.com" target="_blank"&gt;Visit Google in New Tab&lt;/a&gt;</code><br>
+        Result: <a href="https://www.google.com" target="_blank">Visit Google in New Tab</a>
+      </li>
+    </ul>
+    <br>
+
+    <!-- Image Tag -->
+    <li><b>Image Tag ( &lt;img&gt; )</b></li>
+    <ul>
+      <li>Used to display images on a webpage.</li>
+      <li><b>Attributes:</b>
+        <ol>
+          <li><b>src:</b> Source or path of the image file.</li>
+          <li><b>alt:</b> Alternative text if the image fails to load.</li>
+          <li><b>width & height:</b> Set image dimensions in pixels.</li>
+        </ol>
+      </li>
+      <li><b>Example:</b><br><br>
+        <code>
+          &lt;img src="https://images.pexels.com/photos/1323550/pexels-photo-1323550.jpeg?cs=srgb&dl=pexels-simon73-1323550.jpg&fm=jpg" alt="Sample Image" width="200" height="120"&gt;
+        </code><br><br>
+        Result:<br>
+        <img src="https://images.pexels.com/photos/1323550/pexels-photo-1323550.jpeg?cs=srgb&dl=pexels-simon73-1323550.jpg&fm=jpg" alt="Sample Image" width="200" height="120">
+      </li>
+    </ul>
+    <br>
+
+    <!-- Audio Tag -->
+    <li><b>Audio Tag ( &lt;audio&gt; )</b></li>
+    <ul>
+      <li>Used to embed audio content (.mp3 files).</li>
+      <li><b>Attributes:</b>
+        <ul>
+          <li><b>src:</b> Path of the audio file.</li>
+          <li><b>controls:</b> Displays audio playback options.</li>
+        </ul>
+      </li>
+      <li><b>Example:</b><br><br>
+        <code>
+          &lt;audio src="https://www.w3schools.com/html/horse.mp3" controls&gt;&lt;/audio&gt;
+        </code><br><br>
+        Result:<br>
+        <audio src="https://www.w3schools.com/html/horse.mp3" controls></audio>
+      </li>
+    </ul>
+    <br>
+
+    <!-- Video Tag -->
+    <li><b>Video Tag ( &lt;video&gt; )</b></li>
+    <ul>
+      <li>Used to display video files on a webpage (.mp4, .webm).</li>
+      <li><b>Attributes:</b>
+        <ol>
+          <li><b>src:</b> Source or path of the video file.</li>
+          <li><b>controls:</b> Adds play/pause, volume, etc.</li>
+          <li><b>autoplay:</b> Automatically plays video on page load.</li>
+          <li><b>muted:</b> Mutes video by default.</li>
+          <li><b>loop:</b> Repeats video continuously.</li>
+          <li><b>width & height:</b> Set the video dimensions.</li>
+        </ol>
+      </li>
+      <li><b>Example:</b><br><br>
+        <code>
+          &lt;video src="https://www.w3schools.com/html/mov_bbb.mp4" width="300" height="200" controls autoplay muted loop&gt;&lt;/video&gt;
+        </code><br><br>
+        Result:<br>
+        <video src="https://www.w3schools.com/html/mov_bbb.mp4" width="300" height="200" controls autoplay muted loop></video>
+      </li>
+    </ul>
+    <br>
+
+    <!-- Iframe Tag -->
+    <li><b>Iframe Tag ( &lt;iframe&gt; )</b></li>
+    <ul>
+      <li>Used to embed another HTML page inside the current page.</li>
+      <li><b>Attributes:</b>
+        <ul>
+          <li><b>src:</b> URL of the external page.</li>
+          <li><b>width & height:</b> Set the size of the iframe.</li>
+          <li><b>frameborder:</b> Adds/removes a border around the iframe.</li>
+          <li><b>name:</b> Used as a target for links.</li>
+        </ul>
+      </li>
+      <li><b>Example:</b><br><br>
+        <code>
+          &lt;iframe src="https://www.wikipedia.org" width="300" height="200" frameborder="1" name="myFrame"&gt;&lt;/iframe&gt;
+        </code><br><br>
+        Result:<br>
+        <iframe src="https://www.wikipedia.org" width="300" height="200" frameborder="1" name="myFrame"></iframe>
+      </li>
+      <br>
+      <li>
+        <b>Targeted Link Example:</b><br>
+        <code>
+          &lt;a href="https://www.google.com" target="myFrame"&gt;Open Google in iframe&lt;/a&gt;
+        </code><br><br>
+        Result:<br>
+        <a href="https://www.google.com" target="myFrame">Open Google in iframe</a>
+      </li>
+    </ul>
+  </ul>
+</body>
+</html>

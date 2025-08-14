@@ -1,0 +1,76 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.course{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 5%;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #F5F5F5;
+}
+.course_img img{
+    height: 100%;
+}
+.course_form{
+    /* margin-top: 2%; */
+    padding: 7% 5% 5% 5%;
+    background-color: white;
+}
+.form_heading{
+    padding-bottom: 4%;
+}
+.form_description{
+    padding-bottom: 5%;
+    line-height: 1.5;
+}
+.form h3{
+    padding-bottom: 1%;
+}
+.form p{
+    padding-bottom: 4%;
+}
+.form p>a{
+    color: #006340;
+    padding-right: 3px;
+}
+.form p>a:hover{
+    color: black;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+.name,.loc_phone{
+    display: flex;
+    justify-content: space-between;
+}
+label{
+    padding-bottom: 5px;
+}
+.first_name,.last_name,.location,.phone_no{
+    width: 46%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.form input, select{
+    padding: 10px;
+    margin-bottom: 15px;
+}
+.form input, select:hover{
+    outline-color: #BFDEFF;
+}
+.next_button{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    /* background-color: #006340; */
+}
+.next_button button{
+    background-color: #59A289;
+    border: none;
+    color: white;
+    border-radius: 30px;
+    padding: 15px 30px;
+}

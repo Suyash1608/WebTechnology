@@ -1,0 +1,162 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    display: flex;
+    height: 80px;
+    /* border: 2px solid red; */
+    justify-content: space-between;
+}
+.logos{
+    display: flex;
+    width: 30%;
+    /* gap: 5%; */
+    align-items: center;
+    /* padding: 0px 30px; */
+    justify-content: space-evenly;
+}
+
+.logos div{
+    align-items: center;
+}
+.bus_search_content{
+    display: flex;
+    justify-content: center;
+}
+.navlinks{
+    display: flex;
+    align-items: center;
+    width: 30%;
+    justify-content: space-evenly;
+    /* margin-right: 20px; */
+}
+.bus_ticket{
+    display: flex;
+    flex-direction: column;
+    font-size: small;
+    justify-content: center;
+}
+.train_ticket{
+    font-size: small;
+    display: flex;
+    flex-direction: column;
+    font-size: small;
+    justify-content: center;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+}
+.nav svg{
+    padding: 0px 5px;
+    position: relative;
+    top: 1px;
+}
+.image_section{
+    height: 100%;
+    width: 100%;
+}
+.image_section img{
+    position: relative;
+    bottom: 92px;
+    height: 100%;
+    width: 100%;
+}
+.image_section span{
+    position: relative;
+    top: 56px;
+    left: 76px;
+    font-size: 40px;
+    width: 32%;
+    color: white;
+    display: block;
+    font-weight: bold;
+    z-index: 1;
+}
+.gen_search{
+    display: flex;
+    align-items: center;
+    width: 72%;
+    border: 1px solid gainsboro;
+    border-radius: 18px;
+}
+.box img{
+    height: 24px;
+    width: 24px;
+    
+}
+.box{
+    display: flex;
+    align-items: center;
+    width: 33.33%;
+    /* border: 1px solid black; */
+}
+.box>input{
+    height: 65px;
+    width: 60%;
+    padding-left: 20%;
+    border: none;
+    outline: none;
+}
+.box img{
+    position: relative;
+    left: 12%;
+}
+.women_search{
+    display: flex;
+    border: 1px solid gainsboro;
+    border-radius: 18px;
+    width: 24%;
+    align-items: center;
+    margin-left: 1%;
+    justify-content: space-evenly;
+
+}
+.bus_search_parent{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+    bottom: 180px;
+}
+.bus_search{
+    background-color: white;
+    /* border: 2px solid red; */
+    width: 90%;
+    padding: 2% 0% 4% 0%;
+    border-radius: 24px;
+    box-shadow: 0px 3px 10px 0px gainsboro ;
+    /* box-shadow: ; */
+}
+.button_women {
+    display: flex;
+    align-items: center;
+}
+
+.switch_container {
+    width: 50px;
+    height: 32px;
+    background-color: gainsboro;
+    border-radius: 24px;
+    position: relative;
+    padding: 4px;
+    box-sizing: border-box;
+    border: 2px solid #4b4b4b;
+}
+
+.switch_knob {
+    width: 17px;
+    height: 17px;
+    margin: 2px 4px;
+    background-color: #4b4b4b;
+    border-radius: 50%;
+    
+}
+.women_search>div{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: smaller;
+    gap: 10px;
+}
